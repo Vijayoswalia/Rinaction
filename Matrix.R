@@ -35,3 +35,4 @@ cbind(x,z)
 x
 r=t(x)
 x
+x
