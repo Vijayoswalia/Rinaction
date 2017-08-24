@@ -1,5 +1,7 @@
 vec1=c(1,4,6,8,10)
+vec1
 vec2=1:100
+vec2
 vec3=c(vec1,0,vec2)
 vec3
 vec1[5]
@@ -45,6 +47,7 @@ v
 v=rep(c(1,2,3),4)
 v
 x=1:3
+x
 y=rep(x,3)
 y
 rep(x,c(1,2,3))
