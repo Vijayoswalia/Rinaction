@@ -31,9 +31,10 @@ cat(marks)
 range(marks)
 marks.table=table(marks.cut)
 cbind(marks.table)
+hist(marks.table)
 pie(marks)
 pie(Siblings)
-Siblkings
+Siblings
 Siblings
 pie(Siblings)
 pie(table(siblings))
