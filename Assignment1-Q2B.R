@@ -3,6 +3,17 @@ a=matrix(c(10, 12, 13, 14, 17),nrow=5,ncol=1)
 a
 b=matrix(c(5, 7, 9, 8, 4),nrow=5,ncol=1)
 b
+c=a*b
+c
+d=sum(c)
+d
+e=d/sum(b)
+e
+mean=e
+
+
+
+
 x=cbind(a,b)
 x
 matrix(x)
