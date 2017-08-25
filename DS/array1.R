@@ -23,3 +23,9 @@ dim(salesarray)
 class(salesarray)
 salesarray[3,2,1]
 salesarray[1,1,1]
+
+apply(salesarray,c(1),sum)
+apply(salesarray,c(2),sum)
+apply(salesarray,c(3),sum)
+apply(salesarray,c(2,3),sum)
+apply(salesarray,c(1,2,3),length)
