@@ -1,0 +1,25 @@
+company= c('coy1','coy2')
+department=c('dept','dept2','dept3')
+salesman=c('salesman1','salesman2','salesman3','salesman4')
+set.seed((1234))
+sales=ceiling(runif(2*3*4,50,100))
+cat(sales)
+sales
+length(sales)
+mean(sales)
+sales;length(sales)
+?array
+salesarray=array(dim=c(4,3,2),data=sales,
+                 dimnames=list(salesman,department,company))
+salesarray
+colnames(salesarray)
+rownames(salesarray)
+dimnames(salesarray)
+dimnames(salesarray)[[3]]
+length(salesarray)
+nrow(salesarray)
+ncol(salesarray)
+dim(salesarray)
+class(salesarray)
+salesarray[3,2,1]
+salesarray[1,1,1]
