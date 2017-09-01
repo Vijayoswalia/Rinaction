@@ -1,4 +1,3 @@
-
 a=matrix(c(10, 12, 13, 14, 17),nrow=5,ncol=1)
 a
 b=matrix(c(5, 7, 9, 8, 4),nrow=5,ncol=1)
@@ -11,6 +10,10 @@ e=d/sum(b)
 e
 mean=e
 
+xx=rep(a,b)
+xx
+table(xx)
+mean(xx)
 
 
 
@@ -46,3 +49,4 @@ marks.cut
 table(marks.cut)
 pie (table(marks.cut))
 hist(table(marks.cut))
+

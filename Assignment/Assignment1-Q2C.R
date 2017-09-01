@@ -6,6 +6,15 @@ b=c(5, 7, 9, 8)
 b
 df=data.frame(a,a1,b)
 df
+df$total=a1*b
+df$total
+sum(df$total)
+sum(df$total)/sum(b)
+df
+
+
+
+
 c=a1*b
 c
 d=sum(c)
@@ -20,3 +29,4 @@ freq.b=b/sum(b)
 freq.b
 pie(freq.b)
 hist(freq.b)
+
