@@ -36,3 +36,6 @@ head(mtcars)
 mean(mtcars$mpg)
 sd(mtcars$mpg)
 nnorm(200,20,3)
+
+
+library(corrgram)
