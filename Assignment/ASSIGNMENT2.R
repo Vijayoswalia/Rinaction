@@ -31,14 +31,24 @@ stripchart(x,
            ylab="y-axis",
            method="jitter",
            col=c("orange","red"),
+           pch=16
+)
+
+
+stripchart(x,
+           main="Multiple stripchart for comparision",
+           xlab="x-axis",
+           ylab="y-axis",
+           method="jitter",
+           col=c("orange","red"),
            vertical =TRUE,  #FOR MAKING IT VERTICAL
            pch=16
 )
 
 
-head(mtcars)
-mean(mtcars$mpg)
-sd(mtcars$mpg)
-nnorm(200,20,3)
+#head(mtcars)
+#mean(mtcars$mpg)
+#sd(mtcars$mpg)
+#nnorm(200,20,3)
 
 

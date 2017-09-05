@@ -1,0 +1,10 @@
+plot.new()
+data(mtcars)
+str(mtcars)
+attach(mtcars)
+par(mar=c(1,1,1,1))
+par(fig=c(0,0.8,0,0.8)) # x-axis=0 to 0.8 and y-axis= 0 to 0.8
+plot(wt,mpg)
+par(fig=c(0,0.8,0.65,1), new= TRUE)
+plot(mtcars$wt, mtcars$mpg, xlab="car weight", ylab="miles per Gallon")
+boxplot(wt,horizontal = T, axes=F, new=TRUE)
