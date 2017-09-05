@@ -10,7 +10,7 @@ stripchart(mtcars$mpg)
 
 
 stripchart(mtcars$mpg,
-           main="Mean mileage in miles per Gallon",
+           main="Mileage in miles per Gallon",
            xlab="Gallons",
            ylab="Miles",
            method="jitter",
