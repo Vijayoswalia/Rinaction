@@ -14,3 +14,26 @@ colcls= c('numeric', NA, 'factor','factor', 'logical','character',
 df2=read.csv(file='./data/DS-Students.csv',         #as.is for name
              colClasses = colcls, as.is = T)
 str(df2)
+
+as.date('1967-20-15')
+as.Date('1967-20-15')
+as.Date('1967-10-15')
+
+as.Date('05-oct-2015', format="%d-%b-%Y")
+str(df2$dob)
+head(df2$dob)
+(df2$dob = as.Date(df2$dob, format = "%d-%b-%y"))
+str(df2$dob)
+Sys.Date() - df2$dob
+difftime(Sys.Date(), df2$dob, units='weeks')
+(df2$age = ceiling(as.numeric (difftime(Sys.Date(),
+                                                df2$dob, units='weeks'))/52.25))
+
+
+df2$age > 30  
+df2[df2$age > 30, ] [1:2]
+df2[df2$age > 30, ]
+df2[df2$age > 30, ] [1:3]
+
+
+df2[df2$gender == 'M' & df2$course == 'PGDDS', ][1:2]
