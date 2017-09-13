@@ -37,3 +37,19 @@ df2[df2$age > 30, ] [1:3]
 
 
 df2[df2$gender == 'M' & df2$course == 'PGDDS', ][1:2]
+summary(df2)
+str(df2)
+
+
+
+write.csv(x=df2, file='./data/vijay.csv')
+
+
+
+saveRDS(object= df2,file='./data/vijay.RDS' )
+
+
+markstotal = runif  (11,50,150)
+save(markstotal, df2, file='./data/vijay.Rdata' )
+save.image(file = './data/vijay1.Rdata' )
+save.image()
