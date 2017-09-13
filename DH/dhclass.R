@@ -53,3 +53,18 @@ markstotal = runif  (11,50,150)
 save(markstotal, df2, file='./data/vijay.Rdata' )
 save.image(file = './data/vijay1.Rdata' )
 save.image()
+
+readRDS(file='./data/vijay.RDS' )
+mydata = readRDS(file='./data/vijay.R' )
+load(file='./data/vijay1.Rdata' )
+
+
+df2[df2$hostel ==TRUE,][1:2]
+which(df2$hostel == TRUE)
+df2[which(df2$hostel) == TRUE,]
+str((df2))
+df2[c(1,3,5,7,9), c(1,2)]
+
+df2[,c('rollno','hostel')]
+df2[which(df2$hostel) == TRUE,][c(1,2,4)]
+df2[which(!df2$hostel == TRUE),][c(1,2,4)]
