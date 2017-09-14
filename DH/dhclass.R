@@ -68,3 +68,20 @@ df2[c(1,3,5,7,9), c(1,2)]
 df2[,c('rollno','hostel')]
 df2[which(df2$hostel) == TRUE,][c(1,2,4)]
 df2[which(!df2$hostel == TRUE),][c(1,2,4)]
+
+# Sort
+
+df2
+order(df2$age)
+df2$name[order(df2$age)]   # sort by age; display names
+df2$name[order(-df2$age)]  # sort by descending age; di
+sort(df2$age)
+rev(order(df2$age))
+df2$name[rev(order(df2$age))]
+df2[order(df2$age), c('name', 'age')]
+df2[order(df2$age),1:4] [1:4,]
+df2[order(df2$age)][,1:4]
+
+
+df2[order(df2$age), c("name", "age")]
+df2[order(-df2$hostel, df2$age), c("name", "age", "hostel")]
