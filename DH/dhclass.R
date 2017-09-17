@@ -85,3 +85,20 @@ df2[order(df2$age)][,1:4]
 
 df2[order(df2$age), c("name", "age")]
 df2[order(-df2$hostel, df2$age), c("name", "age", "hostel")]
+
+
+
+#function ----
+# using for
+df2$fees
+
+feestatus = function(x) {
+  if (x >= 150000)
+    print(paste(i,df2$name[i], x, '-Fee paid'))
+  else
+    print(paste(i, df2$name[i], x, '-Fee not Paid - xxx'))
+}
+
+for (i in c(1:11)){
+  feestatus(df2$fees[i])
+}
