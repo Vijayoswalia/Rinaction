@@ -41,3 +41,31 @@ plot(cld(tuk, level=0.05))
 car::qqPlot(fit_anova, simulate=T, labels=F) #test for normal distribution
 bartlett.test(values~ind, data = dfstack) # test for variance
 car::outlierTest(fit_anova) # test for outliers
+
+
+
+x = c(1,3,5,7,9,2,4,6,8,10)
+(x1 = scale(x, scale=F, center = F)) # print vertical
+as.vector(x1)
+(xc = scale(x, scale = F, center = T))
+(xc = scale(x,scale=F, center = 5.5))
+(xc1 = scale(x,scale=F, center = 4))
+cbind(x,-4,xc1)
+(xs = scale(x,scale=T, center = F))
+(rmse = sqrt(sum(x^2)/(length(x)-1)))
+(xsc = scale(x, scale=T,center = T))
+(x2 = x-mean(x))
+(x2-mean(x2))/sd(x2)
+(x = matrix(1:10, ncol=2))
+(centered.x = scale(x, center=T, scale=F))
+
+
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data"
+wine = read.csv(url)
+wine
+colnames(wine) <- c('Type','Alcohol', 'Malic', 'Ash', 'Alcalinity', 'Magnesium',
+                    'Phenols', 'Flavanoids','Nonflavanoids', 'Proanthocyanins', 
+                    'Color', 'Hue', 'Dilution', 'Proline')
+head(wine)
+library(car)
+scatterplotMatrix(wine[2:6])
