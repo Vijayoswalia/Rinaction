@@ -29,7 +29,7 @@ head(df1)
 plot(Aadv1, Asales1)
 abline(lm(Asales1 ~ Aadv1))
 
-car::scatterplot(Aadv1 ~ Asales1, legend.columns=T)
+car::scatterplot(Asales1~Aadv1, legend.columns=T)
 ?car::scatterplot
 
 
@@ -39,8 +39,8 @@ car::scatterplotMatrix(~ Asales1 + Aadv1 + Aadv2, data=df1, spread=F)
 
 #Corrgrams
 names(df1)
-cor(df1[,-1])
-corrgram::corrgram(df1[-1])
+cor(df1[c('Asales1', 'Aadv1', 'Aadv2')])
+corrgram::corrgram(df1[c('Asales1', 'Aadv1', 'Aadv2')])
 
 
 #Mosaic Plot
